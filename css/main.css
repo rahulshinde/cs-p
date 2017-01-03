@@ -79,7 +79,8 @@ a:hover {
     top: 2rem;
     left: 3rem; }
     #index nav ul {
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      line-height: 1.2em; }
       #index nav ul li:nth-child(1) {
         margin-bottom: 4rem; }
   #index footer {
