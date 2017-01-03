@@ -52,4 +52,56 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font-family: 'Syncopate', sans-serif; }
+
+a:link,
+a:visited {
+  color: blue; }
+
+a:hover {
+  color: red; }
+
+.bold {
+  font-weight: bold;
+  text-shadow: 2px 2px 5px grey; }
+
+#index {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  background: url(../img/home/1.png);
+  background-size: 56%;
+  background-position: left bottom;
+  background-repeat: no-repeat; }
+  #index nav {
+    position: absolute;
+    top: 2rem;
+    left: 3rem; }
+    #index nav ul {
+      font-size: 0.8rem; }
+      #index nav ul li:nth-child(1) {
+        margin-bottom: 4rem; }
+  #index footer {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    display: inline-block;
+    font-size: 0.8rem; }
+    #index footer h1 {
+      margin-bottom: 10rem;
+      margin-left: 54%;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px grey; }
+    #index footer h2 {
+      margin-left: 54%;
+      vertical-align: bottom;
+      display: inline-block;
+      width: 25%;
+      margin-right: 0%; }
+    #index footer img {
+      vertical-align: top;
+      display: inline-block;
+      width: 20%; }
+
 /*# sourceMappingURL=main.css.map */
