@@ -86,30 +86,31 @@ table {
     font-size: 2rem;
     font-weight: bold;
     position: fixed;
-    bottom: 7rem;
+    bottom: 5rem;
     right: 3rem;
-    transform: rotate(-15deg);
     box-shadow: 4px 4px 10px white; }
   #index img {
     position: fixed; }
   #index #image {
     border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
+    width: 33rem;
+    height: 33rem;
     top: 4rem;
     left: 15rem;
     z-index: -100;
     box-shadow: 4px 4px 10px white; }
   #index #gif {
     z-index: -100;
-    width: 25rem;
+    width: 10rem;
+    height: 5rem;
     right: 10%;
-    bottom: 1rem;
+    bottom: 2rem;
     clip-path: polygon(0% 100%, 50% 10%, 100% 100%);
     -webkit-clip-path: polygon(0% 100%, 50% 10%, 100% 100%); }
   #index #about {
     opacity: 0;
     border: 1px solid white;
+    background-color: black;
     padding: 1rem;
     position: fixed;
     left: 1rem;
