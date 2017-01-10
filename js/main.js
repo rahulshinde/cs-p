@@ -4,11 +4,8 @@ $(document).ready( function(){
   $('html').css({ 'font-size': root_size });
   $(window).resize(changeRootFontSize);
 
-  $('#about_link').on('mouseover', function(){
-    $('#about').addClass('show');
-  });
-  $('#about_link').on('mouseout', function(){
-    $('#about').removeClass('show');
+  $('#about_link').on('click', function(){
+    $('#about').toggleClass('show');
   });
 })
 
