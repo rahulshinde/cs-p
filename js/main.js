@@ -3,6 +3,13 @@ $(document).ready( function(){
   root_size = $(window).width() / 76.8;
   $('html').css({ 'font-size': root_size });
   $(window).resize(changeRootFontSize);
+
+  $('#about_link').on('mouseover', function(){
+    $('#about').addClass('show');
+  });
+  $('#about_link').on('mouseout', function(){
+    $('#about').removeClass('show');
+  });
 })
 
 changeRootFontSize = function() {
