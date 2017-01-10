@@ -8,3 +8,5 @@
 *.scss
 
 *.map
+
+css/index.scss
