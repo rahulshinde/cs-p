@@ -1,0 +1,158 @@
+#index{
+  background-color: black;
+  font-family: 'Syncopate';
+
+  nav{
+    a:link,
+    a:visited{
+      color:white;
+      text-decoration: none;
+      border: 2px solid white;
+      border-radius: 1rem;
+      padding: 1rem 1rem 0.7rem 1rem;
+      background-color: black;
+      position: fixed;
+      font-size: 2rem;
+      font-weight: bold;
+      @include media($tablet){
+        font-size: 4rem;
+      }
+      @include media($mobile){
+        font-size: 6rem;
+      }
+    }
+  }
+
+  .plain_link:link,
+  .plain_link:visited{
+    color:white;
+    text-decoration: none;
+  }
+
+  .plain_link:hover{
+    color: rgb(0, 255, 0);
+  }
+
+  a:hover,
+  .plain_link:hover,
+  #about_link:hover{ 
+    color: rgb(0, 255, 0);
+    cursor: pointer;
+  }
+
+  #work_link{
+    top: 6rem;
+    left: 10rem;
+    @include media($mobile){
+      top: 2rem;
+      left: 2rem;
+    }
+  }
+
+  #about_link{
+    color:white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 1rem 1rem 0.7rem 1rem;
+    background-color: black;
+    position: fixed;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    bottom: 5rem;
+    right: 3rem;
+    box-shadow: 4px 4px 10px white; 
+    z-index: 1000;
+    @include media($tablet){
+      font-size: 4rem;
+    }
+    @include media($mobile){
+      font-size: 6rem;
+      top: 15rem;
+      bottom: inherit;
+      right: 2rem;
+    }
+  }
+
+  img{
+    position: fixed;
+  }
+
+  #image{
+    border-radius: 50%;
+    width: 33rem;
+    height: 33rem;
+    top: 4rem;
+    left: 15rem;
+    z-index: -100;
+
+    box-shadow: 4px 4px 10px white;
+
+    @include media($tablet){
+      width: 40rem;
+      height: 40rem;
+    }
+
+    @include media($mobile){
+      top: -5rem;
+      left: -5rem;
+      width: 60rem;
+      height: 60rem;
+    } 
+  }
+
+
+  #gif{
+    z-index: -100;
+    width: 10rem;
+    height: 5rem;
+    right: 10%;
+    bottom: 2rem;
+    clip-path: polygon(0% 100%, 50% 10%, 100% 100%);
+    -webkit-clip-path: polygon(0% 100%, 50% 10%, 100% 100%);
+
+    @include media($tablet){
+      width: 15rem;
+      height: 10rem;
+      right: 25%;
+      bottom: 3rem;
+    }
+
+    @include media($mobile){
+      width: 25rem;
+      height: 15rem;
+      right: 2rem;
+      bottom: 2rem;
+    } 
+  }
+
+  #about{
+    opacity: 0;
+    border: 1px solid white;
+    background-color: black;
+    padding: 1rem;
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    color: white;
+    transition: opacity ease 0.4s;
+    z-index: 100;
+
+    font-size: 1rem;
+    line-height: 1.2em;
+    &.show{
+      opacity: 1;
+    }
+
+    @include media($tablet){
+      width: 38rem;
+      font-size: 1.8rem;
+    }
+
+    @include media($mobile){
+      width: 60rem;
+      font-size: 3rem;
+    } 
+  }
+}

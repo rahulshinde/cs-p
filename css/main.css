@@ -54,11 +54,9 @@ table {
 
 #index {
   background-color: black;
-  height: 100vh;
-  width: 100%;
   font-family: 'Syncopate'; }
-  #index a:link,
-  #index a:visited {
+  #index nav a:link,
+  #index nav a:visited {
     color: white;
     text-decoration: none;
     border: 2px solid white;
@@ -68,13 +66,32 @@ table {
     position: fixed;
     font-size: 2rem;
     font-weight: bold; }
+    @media screen and (max-width: 786px) {
+      #index nav a:link,
+      #index nav a:visited {
+        font-size: 4rem; } }
+    @media screen and (max-width: 550px) {
+      #index nav a:link,
+      #index nav a:visited {
+        font-size: 6rem; } }
+  #index .plain_link:link,
+  #index .plain_link:visited {
+    color: white;
+    text-decoration: none; }
+  #index .plain_link:hover {
+    color: lime; }
   #index a:hover,
+  #index .plain_link:hover,
   #index #about_link:hover {
     color: lime;
     cursor: pointer; }
   #index #work_link {
     top: 6rem;
     left: 10rem; }
+    @media screen and (max-width: 550px) {
+      #index #work_link {
+        top: 2rem;
+        left: 2rem; } }
   #index #about_link {
     color: white;
     text-decoration: none;
@@ -88,7 +105,17 @@ table {
     position: fixed;
     bottom: 5rem;
     right: 3rem;
-    box-shadow: 4px 4px 10px white; }
+    box-shadow: 4px 4px 10px white;
+    z-index: 1000; }
+    @media screen and (max-width: 786px) {
+      #index #about_link {
+        font-size: 4rem; } }
+    @media screen and (max-width: 550px) {
+      #index #about_link {
+        font-size: 6rem;
+        top: 15rem;
+        bottom: inherit;
+        right: 2rem; } }
   #index img {
     position: fixed; }
   #index #image {
@@ -99,6 +126,16 @@ table {
     left: 15rem;
     z-index: -100;
     box-shadow: 4px 4px 10px white; }
+    @media screen and (max-width: 786px) {
+      #index #image {
+        width: 40rem;
+        height: 40rem; } }
+    @media screen and (max-width: 550px) {
+      #index #image {
+        top: -5rem;
+        left: -5rem;
+        width: 60rem;
+        height: 60rem; } }
   #index #gif {
     z-index: -100;
     width: 10rem;
@@ -107,6 +144,18 @@ table {
     bottom: 2rem;
     clip-path: polygon(0% 100%, 50% 10%, 100% 100%);
     -webkit-clip-path: polygon(0% 100%, 50% 10%, 100% 100%); }
+    @media screen and (max-width: 786px) {
+      #index #gif {
+        width: 15rem;
+        height: 10rem;
+        right: 25%;
+        bottom: 3rem; } }
+    @media screen and (max-width: 550px) {
+      #index #gif {
+        width: 25rem;
+        height: 15rem;
+        right: 2rem;
+        bottom: 2rem; } }
   #index #about {
     opacity: 0;
     border: 1px solid white;
@@ -116,8 +165,19 @@ table {
     left: 1rem;
     bottom: 1rem;
     color: white;
-    transition: opacity ease 0.4s; }
+    transition: opacity ease 0.4s;
+    z-index: 100;
+    font-size: 1rem;
+    line-height: 1.2em; }
     #index #about.show {
       opacity: 1; }
+    @media screen and (max-width: 786px) {
+      #index #about {
+        width: 38rem;
+        font-size: 1.8rem; } }
+    @media screen and (max-width: 550px) {
+      #index #about {
+        width: 60rem;
+        font-size: 3rem; } }
 
 /*# sourceMappingURL=main.css.map */
